@@ -6,26 +6,27 @@ function MovieCard({movie}){
         alert("clicked")
     }
 
-    return
-    <>
-        <div className="movie-card">
-        <div className="movie-poster">
-            <img src={movie.title} alt={movie.title} />
-            <div className="movie-overlay">
-                <button className="favorite-btn" onClick={onFavoriteClick}>
-                    H
-                </button>
+    return (
+        <>
+            <div className="movie-card">
+            <div className="movie-poster">
+                <img src={movie.title} alt={movie.title} />
+                <div className="movie-overlay">
+                    <button className="favorite-btn" onClick={onFavoriteClick}>
+                        H
+                    </button>
+
+                </div>
+            </div>
+
+            <div className="movie-info">
+                <h3>{movie.title}</h3>
+                <p>{movie.release_date}</p>
+            </div>
 
             </div>
-        </div>
-
-        <div className="movie-info">
-            <h3>{movie.title}</h3>
-            <p>{movie.release_date}</p>
-        </div>
-
-        </div>
-    </>
+        </>
+    )
 }
 
 export default MovieCard
