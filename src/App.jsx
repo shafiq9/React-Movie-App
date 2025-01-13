@@ -1,11 +1,12 @@
 import './App.css'
+import MovieCard from './components/MovieCard'
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <>
-      <div></div>
+      <MovieCard movie={{title: "Tim's Film", release_date: "2024"}} />
     </>
   )
 }
