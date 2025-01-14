@@ -1,4 +1,4 @@
-import "../css/Favorites.css"
+import "../css/MovieCard.css"
 
 function MovieCard({ movie }) {
 
